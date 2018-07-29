@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    for (  var a = 1000;a<10000;a++){
+var b , c ,d ;
+        b = Math.floor(a/1000);
+        c = Math.floor(a/100)% 10;
+        d = Math.floor(a/10) % 10;
+    if ((  a % 13 == 0 ) && (b == c + d)){
+
+    document.write(a+"<br>");
+
+    }
+    }
+//    去整数有不同的取法，取余数，或者减掉高位数字。
+</script>
+
+</body>
+</html>
