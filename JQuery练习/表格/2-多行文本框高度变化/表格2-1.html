@@ -29,16 +29,16 @@
     $(function () {
         var $comment = $("#comment");
         $(function () {
-            $(".bigger").onclick(function () {
+            $(".bigger").click(function () {
                 $comment.height($comment.height()<500?$comment.height()+50:$comment.height());
 
             });
-            $(".small").onclick(function () {
+            $(".smaller").click(function () {
                 $comment.height($comment.height()>50?$comment.height()-50:$comment.height());
 
             });
 
-        })
+        });
 
     })
 
