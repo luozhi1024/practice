@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格1-1</title>
+</head>
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<body>
+
+<table>
+    <thead>
+    <tr><th>姓名</th><th>性别</th><th>暂住地</th></tr>
+    </thead>
+    <tbody>
+    <tr><td>张山</td><td>男</td><td>浙江宁波</td></tr>
+    <tr><td>李四</td><td>女</td><td>浙江杭州</td></tr>
+    <tr><td>王五</td><td>男</td><td>湖南长沙</td></tr>
+    <tr><td>找六</td><td>男</td><td>浙江温州</td></tr>
+    <tr><td>Rain</td><td>男</td><td>浙江杭州</td></tr>
+    <tr><td>MAXMAN</td><td>女</td><td>浙江杭州</td></tr>
+    </tbody>
+</table>
+<script src="jquery-1.12.4.js"></script>
+
+<script>
+    $(function () {
+        $(function(){
+            $("tbody>tr:odd").addClass("odd"); //先排除第一行,然后给奇数行添加样式
+            $("tbody>tr:even").addClass("even"); //先排除第一行,然后给偶数行添加样式
+        })
+
+    })
+
+
+</script>
+</body>
+
+</html>
