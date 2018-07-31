@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>表格1-2</title>
 </head>
+<link href="../style.css" rel="stylesheet" type="text/css" />
 <body>
 <table>
     <thead>
@@ -18,5 +19,16 @@
     <tr><td>MAXMAN</td><td>女</td><td>浙江杭州</td></tr>
     </tbody>
 </table>
+
+<script src="jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        $("tbody>tr:odd").addClass("odd");
+        $("tbody > tr:even").addClass("even");
+        $("tr :contains('王五')").addClass("selected")
+
+    })
+
+</script>
 </body>
 </html>
