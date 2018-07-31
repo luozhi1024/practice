@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式设计</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #menu,#header,#footer{
+            height: 100px;
+            width: 1200px;
+            background: deeppink;
+            text-align: center;
+            line-height: 100px;
+            margin: 30px auto;
+        }
+        #footer{
+            clear: both;
+        }
+        #banner {
+            width: 960px;
+            margin: 0 auto;
+        }
+        #banner img {
+            width: 960px;
+            display: block;
+        }
+        #content{
+            width: 960px;
+            margin: 0 auto;
+        }
+        #p1 {
+            height: 400px;
+            width: 450px;
+            background: deeppink;
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 30px;
+
+        }
+        #content #p2 {
+            height: 400px;
+            width: 400px;
+            background: deeppink;
+            float: left;
+
+        }
+        @media (max-width: 960px){
+            #menu,#header,#footer{
+                width: 100%;
+            }
+            #content{
+                width: 100%;
+            }
+            #content #p1{
+                width: 41.6%;
+                margin-right:3.125% ;
+            }
+            #content #p2{
+                width:46.875% ;
+            }
+            #banner{
+                width: 100%;
+            }
+            #banner img{
+                width: 100%;
+            }
+
+
+        }
+
+        }
+    </style>
+</head>
+<body>
+<div id="header">页头</div>
+<div id="menu">导航</div>
+<div id="banner">
+    <img src="1.jpg" alt="">
+</div>
+<div id="content">
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+</div>
+<div id="footer">页尾</div>
+
+</body>
+</html>
